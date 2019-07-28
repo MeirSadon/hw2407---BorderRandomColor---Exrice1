@@ -1,0 +1,14 @@
+﻿<Window x:Class="hw2407___FlightInProject_Exrice_2_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hw2407___FlightInProject_Exrice_2_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="SearchFlightBtn" Content="Serach Flight By Id" HorizontalAlignment="Left" Margin="351,209,0,0" VerticalAlignment="Top" Width="143" RenderTransformOrigin="0.5,0.5" Click="Button_Click"/>
+        <Label x:Name="ShowFligtLbl" Content="{Binding MyFlight.Remaining_Tickets, Mode=TwoWay}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="76,311,0,0" VerticalAlignment="Top" Width="614" RenderTransformOrigin="0.5,0.5" Height="38"/>
+        <TextBox x:Name="numberFlightTxtBx" HorizontalAlignment="Left" Height="23" Margin="117,105,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="598" RenderTransformOrigin="0.5,0.5"/>
+    </Grid>
+</Window>
